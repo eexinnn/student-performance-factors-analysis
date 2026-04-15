@@ -1,5 +1,6 @@
 # student-performance-factors-analysis
 Data analysis project using Python
+
 📌Overview
 This project analyzes the key factors affecting student academic performance and builds a linear regression model to predict exam scores.
 The goal is to identify relationships between variables such as study hours, sleep, and attendance, and understand how they impact student outcomes.
