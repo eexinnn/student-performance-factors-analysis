@@ -1,54 +1,75 @@
-# student-performance-factors-analysis
-Data analysis project using Python
+# 📊 Student Performance Analysis & Prediction
 
-📌Overview
-This project analyzes the key factors affecting student academic performance and builds a linear regression model to predict exam scores.
-The goal is to identify relationships between variables such as study hours, sleep, and attendance, and understand how they impact student outcomes.
+## 📌 Overview
+This project analyzes the key factors affecting student academic performance and builds predictive models using linear regression.
+The goal is to understand how variables such as study hours, sleep, and attendance influence exam scores.
 
-📌 Objectives
--Perform exploratory data analysis (EDA)
--Identify key factors influencing exam scores
--Visualize relationships between variables
--Build a linear regression model for prediction
+## 🚀 Key Results
+- Improved model performance from **R² = 0.20 → R² = 0.54**
+- Achieved **Test R² ≈ 0.59** using train-test split
+- Demonstrated that multiple factors significantly improve prediction accuracy
 
-📌 Dataset
-Source: StudentPerformanceFactors Dataset
-Contains variables such as:
-i)Hours Studied
-ii)Sleep Hours
-iii)Attendance
-iv)Exam Score
+## 🔍 Key Insights
+- Students who study more tend to achieve higher exam scores  
+- Sleep has a moderate impact on academic performance  
+- Attendance is positively related to exam results  
+- Combining multiple variables provides better predictive performance  
 
-📌 Tools & Technologies
--Python
--Pandas
--Matplotlib
--Scikit-learn
+## 📊 Exploratory Data Analysis (EDA)
+The dataset was explored to understand patterns and relationships between variables.
 
-📌 Exploratory Data Analysis (EDA)
--Analyzed distribution of exam scores
--Compared performance across different factors
--Identified correlations between variables
+Key steps:
+- Examined data structure and summary statistics  
+- Analyzed relationships between study habits and performance  
+- Visualized trends using scatter plots  
 
-📌 Key Findings
--Study hours show a strong positive relationship with exam scores
--Sleep has a moderate impact on performance
--Attendance is also positively correlated with results
+Example:
+- Study Hours vs Exam Score shows a positive relationship  
+- Sleep Hours also contributes moderately to performance  
 
-📌 Linear Regression Model
-A simple linear regression model was built to predict exam scores based on study hours.
+## 🤖 Modeling
 
-Model Equation:
-Exam Score = a + b × Hours Studied
+###  Simple Linear Regression
+- Used **Hours Studied** to predict exam score  
+- Result: **R² ≈ 0.20** (low explanatory power)
 
--The model shows a positive slope, indicating that increased study time leads to higher scores
--R² score was used to evaluate model performance
+###  Multiple Linear Regression
+- Used:
+  - Hours Studied  
+  - Sleep Hours  
+  - Attendance  
+- Result: **R² ≈ 0.54**
+👉 Shows that multiple factors influence performance
 
-📊 Visualization
--Scatter plot of Hours Studied vs Exam Score
--Regression line showing trend
--Additional plots for other factors
 
-📌 Conclusion
-This project demonstrates that study habits significantly influence academic performance.
-Linear regression provides a simple but effective way to model and predict student outcomes.
+## 🧪 Model Evaluation
+The model was evaluated using a **train-test split** approach:
+
+- Training data: 80%  
+- Testing data: 20%  
+
+**Test Result:**
+- Test R² ≈ 0.59  
+👉 Indicates that the model generalizes well and does not overfit
+
+## 🧠 Feature Importance
+- Study hours have the strongest impact on exam scores  
+- Attendance also plays a significant role  
+- Sleep contributes moderately  
+
+## 🛠️ Tools & Technologies
+- Python  
+- Pandas  
+- Matplotlib  
+- Scikit-learn  
+
+## 📌 Conclusion
+This project demonstrates that student performance is influenced by multiple factors.
+While study hours alone provide limited predictive power, combining multiple variables significantly improves model performance.
+The use of train-test split confirms that the model is reliable and performs well on unseen data.
+
+
+## 🚀 Future Improvements
+- Apply advanced machine learning models (e.g., Random Forest)  
+- Include more features for better prediction  
+- Perform feature engineering  
